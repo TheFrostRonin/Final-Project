@@ -29,7 +29,8 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
         let dict = NSDictionary(contentsOfFile: path!)
         
         restaurantImageData = dict!.object(forKey:"restaurantImages") as! [String]
-        
+        restaurantTableView.dataSource = self
+        restaurantTableView.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -66,5 +67,14 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
         
         tableView.deselectRow(at: indexpath as IndexPath, animated: true)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "mySegue"
+        {
+            let s1 = segue.destination as! DetailViewController
+            let imageIndex = restaurantTableView.indexPathForSelectedRow?.row
+            s1.imagePass = restaurantImageData[imageIndex!]
+        }
 }
 
+}
