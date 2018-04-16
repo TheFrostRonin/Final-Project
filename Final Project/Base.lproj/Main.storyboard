@@ -17,14 +17,24 @@
                     <view key="view" contentMode="scaleToFill" id="ZsC-DW-B5j">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FXA-yV-N1e">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="bVf-uQ-t4X"/>
                     </view>
                     <navigationItem key="navigationItem" id="hbK-YL-XwH"/>
+                    <connections>
+                        <outlet property="mapView" destination="FXA-yV-N1e" id="xfp-6G-SLv"/>
+                        <outlet property="restaurantListTitle" destination="hbK-YL-XwH" id="irG-Db-GOg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BFo-Zi-rM2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2603" y="467"/>
+            <point key="canvasLocation" x="2602.5" y="466.90140845070425"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="paL-Bm-Ybh">
@@ -63,6 +73,27 @@
             </objects>
             <point key="canvasLocation" x="2602.5" y="-223.94366197183098"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="bQt-4X-Raw">
+            <objects>
+                <viewController id="AkG-PT-Iiw" customClass="DetailViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a6N-yW-ctm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cbh-pa-tbS">
+                                <rect key="frame" x="40" y="42" width="240" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Vof-Gb-cBa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WhN-Yf-G8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3461.25" y="-225"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5W1-Cq-km7">
             <objects>
@@ -81,11 +112,11 @@
             </objects>
             <point key="canvasLocation" x="167" y="136"/>
         </scene>
-        <!--Item 1-->
+        <!--Eats-->
         <scene sceneID="6re-hK-fsZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j8M-ye-nsV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Ln6-Yi-9jO"/>
+                    <tabBarItem key="tabBarItem" title="Eats" image="restaurant" id="Ln6-Yi-9jO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Y5-fu-m1L">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -100,11 +131,11 @@
             </objects>
             <point key="canvasLocation" x="1434.375" y="-222.88732394366198"/>
         </scene>
-        <!--Item 2-->
+        <!--Locations-->
         <scene sceneID="ilP-IG-OUN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vBq-Nw-hsv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="0T0-fI-gVE"/>
+                    <tabBarItem key="tabBarItem" title="Locations" image="map_marker" id="0T0-fI-gVE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SDe-bT-MDu">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -120,4 +151,8 @@
             <point key="canvasLocation" x="1432.5" y="466.90140845070425"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map_marker" width="30" height="30"/>
+        <image name="restaurant" width="30" height="30"/>
+    </resources>
 </document>
