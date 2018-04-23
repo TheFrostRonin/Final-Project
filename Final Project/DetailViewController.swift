@@ -30,6 +30,8 @@ class DetailViewController: UIViewController {
         if let textName = textPass {
             textView.text = textName
         }
+        
+        self.view.backgroundColor = UIColor.cyan
     }
 
     override func didReceiveMemoryWarning() {
