@@ -2,19 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>restaurantDescription</key>
+	<array>
+		<string>Chilis: Burgers. Ribs. Fajitas. It all started with a dream: to create a place you’d want to go and hang out with good friends over a burger and a beer. For people who craved connection with family and friends, we were the only ones to offer a genuine Southwest spirit filled with positive energy. Since then, we’ve boldly claimed our place in the restaurant universe.</string>
+		<string>Ninja Sushi: Serving only the highest quality, best tasting, and most affordable dishes without using artificial ingredients or preservatives. Since day one, we’ve used only the freshest ingredients to create a menu that is natural, healthy, tasty, and affordable. Each year we offer new and innovative dishes to our menu combining new ingredients and techniques to create that “Umami” taste we are known for. Whatever you decide to order when dining with us, we’re sure that you will leave with a full belly and a stupid grin.</string>
+		<string>Panda Express: Bringing people together to share joy has been our family&apos;s inspiration since opening the first Panda Express in 1983 in Glendale, California. As we continue to open restaurants from coast to coast and around the world, the bold flavors of Chinese cuisine inspire our cooking, while our extended family of guests and associates remains at the heart of what we do. Welcome to our family&apos;s Chinese Kitchen.</string>
+		<string>Loco Moco Drive Inn: will satisfy all your cravings. It&apos;s like L&amp;L Hawaiian Barbecue and Mililani Restaurant, but different. They have everything from burgers/sandwiches to saimin to mixed plates. They even serve breakfast and bubble drinks. Affordable prices. Service is quick and friendly. Atmosphere is laid back and clean. </string>
+		<string>Ruby Tuesday: is driven by uncompromising freshness and quality, gracious hospitality and a growing list of restaurants destined to be the envy of the casual dining business. At Ruby Tuesday, we&apos;re fully committed to preparing and serving food of uncompromising freshness and quality</string>
+		<string>Taco Bell: Always been satified by this particular Taco Bell.  Always the correct order, correct change, correct sauce, correct asking if I want to eat something I really don&apos;t want to eat but it made me think for a little bit, and just a good, straight up, Taco Bell. What more or less do you want from a Taco Bell people, it is what it is, A TACO BELL!</string>
+	</array>
 	<key>restaurantImages</key>
-	<array/>
-	<key>Item 0</key>
-	<string>Chilis</string>
-	<key>item 1</key>
-	<string>Ninja Sushi</string>
-	<key>item 2</key>
-	<string>Panda Express</string>
-	<key>item 3</key>
-	<string>Loco Moco</string>
-	<key>item 4</key>
-	<string>Ruby Tuesday</string>
-	<key>item 5</key>
-	<string>Taco Bell</string>
+	<array>
+		<string>chilis</string>
+		<string>Ninja Sushi</string>
+		<string>Panda Express</string>
+		<string>Loco Moco</string>
+		<string>Ruby Tuesday</string>
+		<string>Taco Bell</string>
+	</array>
 </dict>
 </plist>

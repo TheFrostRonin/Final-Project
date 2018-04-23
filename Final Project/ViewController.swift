@@ -17,6 +17,8 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
     
     var restaurantImageData = [String]()
     
+    var restaurantDescriptionData = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,6 +33,8 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
         restaurantImageData = dict!.object(forKey:"restaurantImages") as! [String]
         restaurantTableView.dataSource = self
         restaurantTableView.delegate = self
+        
+        restaurantDescriptionData = dict!.object(forKey: "restaurantDescription") as! [String]
     }
     
     override func didReceiveMemoryWarning() {
@@ -74,6 +78,8 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
             let s1 = segue.destination as! DetailViewController
             let imageIndex = restaurantTableView.indexPathForSelectedRow?.row
             s1.imagePass = restaurantImageData[imageIndex!]
+            
+            s1.textPass = restaurantDescriptionData[imageIndex!]
         }
 }
 

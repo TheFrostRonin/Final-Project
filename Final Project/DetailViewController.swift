@@ -14,6 +14,10 @@ class DetailViewController: UIViewController {
     
     var imagePass: String?
     
+    @IBOutlet weak var textView: UITextView!
+    
+    var textPass: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +25,10 @@ class DetailViewController: UIViewController {
         
         if let imageName = imagePass {
             imageView.image = UIImage(named: imageName)
+        }
+        
+        if let textName = textPass {
+            textView.text = textName
         }
     }
 
